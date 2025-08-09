@@ -16,6 +16,37 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Enhanced portfolio item styling for better text readability */
+            .portfolio-item .caption {
+                background-color: rgba(33, 37, 41, 0.85) !important;
+                transition: background-color 0.3s ease;
+            }
+            
+            .portfolio-item:hover .caption {
+                background-color: rgba(29, 128, 159, 0.95) !important;
+            }
+            
+            .portfolio-item .caption .caption-content {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+            
+            .portfolio-item .caption .caption-content .h2 {
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+            
+            .portfolio-item .caption .caption-content p {
+                font-weight: 400;
+                line-height: 1.4;
+            }
+            
+            /* Remove cursor pointer since items are not clickable */
+            .portfolio-item {
+                cursor: default;
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -100,9 +131,7 @@
         <section class="callout">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
-                    Always ready for the
-                    <em>next</em>
-                    challenge!
+                    View the things I've created!
                 </h2>
                 <a class="btn btn-primary btn-xl" href="#projects">View My Projects</a>
             </div>
@@ -116,18 +145,18 @@
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Weather App</div>
+                                    <div class="h2">Weather App (In progress)</div>
                                     <p class="mb-0">A comprehensive weather application providing real-time forecasts and detailed meteorological data with an intuitive user interface.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="Weather App Project" />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Roblox Game</div>
@@ -135,10 +164,11 @@
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="Roblox Game Project" />
-                        </a>
+                        </div>
                     </div>
+                    <!--
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Python Projects</div>
@@ -146,18 +176,20 @@
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="Python Projects" />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">C++ Applications</div>
-                                    <p class="mb-0">System-level programming projects showcasing performance optimization and memory management skills.</p>
+                    
+                    <div class="portfolio-item">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <div class="h2">C++ Applications</div>
+                                <p class="mb-0">System-level programming projects showcasing performance optimization and memory management skills.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="C++ Applications" />
-                        </a>
+                        <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="C++ Applications" />
+                    </div>
+                    -->
                     </div>
                 </div>
             </div>
